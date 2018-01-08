@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>GeoGebra construction and highlighting</title>
+</head>
+<body>
+<div id="applet"></div>
+
+<!-- build:js({.,app}) scripts/ggb.js -->
+<!-- bower:js -->
+<script src="scripts/deployggb.js"></script>
+<script src="scripts/base.js"></script>
+<script src="scripts/hi.js"></script>
+<script src="scripts/parse.js"></script>
+<script src="scripts/create.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<script>
+  Hi.openGGBFile({filename: 'test/angle.ggb'});
+  // 在Chrome的Console中输入下列表达式测试亮显：
+  //   Hi.selAngle1p('A', {timeout:1000})
+  //   Hi.selAngle1p('β')
+  //   Hi.selAngle3p('BAC')
+
+</script>
+</body>
+</html>
